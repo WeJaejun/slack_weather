@@ -20,6 +20,8 @@ jobs:
         # python 모듈 설치
         - name: python 모듈 설치
           run: pip install -r req.txt
+        - name: playwright 설정
+          run: playwright install
         # python main.py 명령어 실행
         - name: python main.py 실행
           env:
